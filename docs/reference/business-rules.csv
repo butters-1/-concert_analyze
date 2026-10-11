@@ -1,0 +1,2 @@
+rule_id,domain,name,description,enforcement_level,source_adr
+BR-001,general,example_rule,Example description of an enforced domain invariant,strict,0001
