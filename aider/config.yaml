@@ -1,0 +1,7 @@
+# aider configuration file
+version: 1
+settings:
+  # Add your settings here
+  # For example:
+  # language: python
+  # max_tokens: 2048
