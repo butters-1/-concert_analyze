@@ -1,16 +1,1 @@
-repos:
-  - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.9.0
-    hooks:
-      - id: ruff
-        args: [--fix]
-      - id: ruff-format
-
-  - repo: local
-    hooks:
-      - id: docs-curator
-        name: Run docs-curator
-        entry: ./path/to/docs-curator
-        language: system
-        types: [file]
-        files: \.rst$
+chmod +x ./scripts/verify.sh
