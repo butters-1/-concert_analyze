@@ -1,2 +1,14 @@
-git add test.txt
-git commit -m "Test commit with pre-commit hooks"
+repos:
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: v0.0.278
+    hooks:
+      - id: ruff
+        language_version: python3.8
+  - repo: local
+    hooks:
+      - id: docs-curator
+        name: Run docs-curator
+        entry: ./path/to/docs-curator
+        language: shell
+        types: [file]
+        files: \.rst$
