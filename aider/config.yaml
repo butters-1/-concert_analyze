@@ -1,7 +1,7 @@
 # aider configuration file
 version: 1
 settings:
-  # Add your settings here
-  # For example:
-  # language: python
-  # max_tokens: 2048
+  model: ollama_chat/qwen2.5-coder:7b
+  allow_commits: true
+  auto_refresh_repo_map: true
+  full_reign_on_local_files: true
