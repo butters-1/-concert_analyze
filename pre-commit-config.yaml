@@ -16,3 +16,9 @@ repos:
         language: shell
         types: [file]
         files: \.rst$
+      - id: verify-script
+        name: Run verify script
+        entry: ./scripts/verify.sh
+        language: system
+        types: [python]
+        pass_filenames: false
