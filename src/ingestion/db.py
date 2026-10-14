@@ -1,5 +1,6 @@
 import duckdb
 
+
 class DuckDBConnection:
     def __init__(self, db_path: str):
         self.con = duckdb.connect(db_path)

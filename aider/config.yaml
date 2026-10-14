@@ -1,1 +1,17 @@
-chmod +x scripts/verify.sh
+# Local Execution Models
+model: ollama_chat/qwen2.5-coder:7b
+
+# Force strict editing discipline for smaller local LLMs
+edit-format: diff
+
+# Repo Map Enabled & Auto Refresh Strategy
+map-tokens: 1024
+map-refresh: auto
+
+# Execution Rules
+auto-commits: true
+auto-lint: true
+auto-test: true
+lint-cmd: "./scripts/verify.sh"
+test-cmd: "./scripts/verify.sh"
+read: CONVENTIONS.md

@@ -1,6 +1,6 @@
 import os
 import polars as pl
-from datetime import datetime
+
 
 def write_parquet(df: pl.DataFrame, provider: str, event_date: str, ingested_at: str):
     base_path = "data/raw"
