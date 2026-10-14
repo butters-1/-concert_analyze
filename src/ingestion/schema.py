@@ -8,8 +8,8 @@ EVENT_SNAPSHOT_SCHEMA = {
     "event_datetime": pl.Datetime("UTC"),
     "ingested_at": pl.Datetime("UTC"),
     "days_until_event": pl.Float64,
-    "min_price": pl.Float64,
+    "min_price": pl.Float64.nullable(),
     "median_price": pl.Float64.nullable(),
-    "max_price": pl.Float64,
+    "max_price": pl.Float64.nullable(),
     "listing_count": pl.Int64.nullable(),
 }
