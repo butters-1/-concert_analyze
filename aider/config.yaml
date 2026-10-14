@@ -9,7 +9,7 @@ map-tokens: 1024
 map-refresh: auto
 
 # Execution Rules
-auto-commits: true
+auto-commits: false
 auto-lint: true
 auto-test: true
 lint-cmd: "./scripts/verify.sh"
