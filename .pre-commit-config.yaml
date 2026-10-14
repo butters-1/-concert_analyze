@@ -1,1 +1,9 @@
-chmod +x ./scripts/verify.sh
+repos:
+  - repo: local
+    hooks:
+      - id: verify-script
+        name: Run verify script
+        entry: ./scripts/verify.sh
+        language: system
+        types: [python]
+        pass_filenames: false
